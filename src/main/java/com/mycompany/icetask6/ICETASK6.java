@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.icetask6;
-import java,util.Scanner;
+import java.util.Scanner;
 /**
  *
  * @author Katlego Mohlala
@@ -34,10 +34,20 @@ public class ICETASK6 {
             char ch = charAt(i);
             
             //Check if character is a vowel
-            if (isVowel(i)) {
+            if (isVowel(ch)) {
                 count++;
+            } else {
             }
         }
         return count;
+    }
+    
+    // Helper method to determine if a character is a vowel
+    public static boolean isVowel(char ch) {
+        // Define a string of vowels
+        String vowels = "aeiou";
+        
+        // Check if the character is in the vowels string
+        return vowels.indexOf(ch) != -1;
     }
 }
