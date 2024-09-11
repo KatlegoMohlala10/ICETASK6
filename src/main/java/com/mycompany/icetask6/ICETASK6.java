@@ -24,10 +24,20 @@ public class ICETASK6 {
     }
     
     //method to count the number of vowels a sentence has
-    public static int countVowe(String sentence) {
+    public static int countVowel(String sentence) {
         //Change the sentence to lower case to disable case sensitivity
         sentence = sentence.toLowerCase();
         //initialize the count to 0
-        int count = 0
+        int count = 0;
+        //Iterate through the sentence to check each character for a vowel
+        for (int i = 0; i < sentence.length(); i++) {
+            char ch = charAt(i);
+            
+            //Check if character is a vowel
+            if (isVowel(i)) {
+                count++;
+            }
+        }
+        return count;
     }
 }
