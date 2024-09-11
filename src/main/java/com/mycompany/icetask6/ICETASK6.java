@@ -25,7 +25,9 @@ public class ICETASK6 {
     
     //method to count the number of vowels a sentence has
     public static int countVowe(String sentence) {
+        //Change the sentence to lower case to disable case sensitivity
         sentence = sentence.toLowerCase();
-        
+        //initialize the count to 0
+        int count = 0
     }
 }
