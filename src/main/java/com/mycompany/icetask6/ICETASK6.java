@@ -31,7 +31,7 @@ public class ICETASK6 {
         int count = 0;
         //Iterate through the sentence to check each character for a vowel
         for (int i = 0; i < sentence.length(); i++) {
-            char ch = charAt(i);
+            char ch = sentence.charAt(i);
             
             //Check if character is a vowel
             if (isVowel(ch)) {
